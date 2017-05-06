@@ -15,9 +15,14 @@
 // })
 import Vue from 'vue'
 import Router from 'vue-router'
-import Index from '@/scripts/components/Index'
+
+import index from '@/scripts/components/index'
+import List from '@/scripts/components/List'
+import Car from '@/scripts/components/Car'
+import My from '@/scripts/components/My'
 import Board from '@/scripts/components/Board'
-import Search from '@/scripts/components/Search'
+
+
 
 Vue.use(Router)
 
@@ -25,17 +30,32 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: Index,
+      component: index,
+
       children: [
-        // {
-        //   path: 'board',
-        //   component: Board
-        // },
+      	 {
+          path: '',
+          component: Board
+        },
         {
-          path: 'search',
-          component: Search
+          path: 'Board',
+          component: Board
+        },
+        {
+          path: 'list',
+          component: List
+        },
+        {
+          path: 'my',
+          component: My
+        },
+        {
+          path: 'car',
+          component: Car
+
         }
       ]
+
     }
-  ]
+      ]
 })
