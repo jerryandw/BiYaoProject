@@ -36,21 +36,22 @@ $bgcolor:yellowgreen
     background: red;
 
     ul{
+      height: 100%;
       @include flexbox();
 
       width: 100%;
 
       li{
-        @include flex(1);
+        @include flex();
         @include flexbox();
         @include flex-direction(column);
         text-align: center;
-
-
         b{
           font-size: .14rem;
-
-          width: 100%;
+            font-weight: normal;
+        }
+        &.active{
+          color: yellow;
         }
       }
     }
