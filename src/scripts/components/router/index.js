@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Index from '@/scripts/components/Index'
-import Main from '@/scripts/components/Main'
-import List from '@/scripts/components/List'
-import Car from '@/scripts/components/Car'
-import My from '@/scripts/components/My'
+import Index from '@/script/components/Index'
+import Main from '@/script/components/Main'
+import List from '@/script/components/List'
+import Car from '@/script/components/Car'
+import My from '@/script/components/My'
 
 
 Vue.use(Router)
@@ -14,12 +14,7 @@ export default new Router({
     {
       path: '/',
       component: Index,
-      
       children: [
-      	 {
-          path: '',
-          component: Main
-        },
         {
           path: 'main',
           component: Main
