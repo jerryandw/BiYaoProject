@@ -1,10 +1,6 @@
 <template>
   <div class="m-index">
-    <header class="yo-header yo-header-a">
-      <h2 class="title">必要</h2>
-      <span class="regret yo-ico">&#xf067;</span>
-
-    </header>
+    
     <section>
       <router-view ></router-view>
     </section>
@@ -19,3 +15,10 @@
     </nav>
   </div>
 </template>
+
+<script>
+
+  export default{
+    
+  }
+</script>

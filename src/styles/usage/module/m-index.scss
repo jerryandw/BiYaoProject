@@ -12,8 +12,10 @@ $bgcolor:yellowgreen
   width: 100%;
 
   section{
-    @include flex(1);
-    background: gray;
+   @include flexbox();
+   @include flex-direction(column);
+   height:100%;
+    background: #fff;
     width: 100%;
     .mint-swipe{
       height: 1.9rem;
