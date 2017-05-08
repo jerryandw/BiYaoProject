@@ -12,12 +12,14 @@ import Board from '@/scripts/components/Board'
 
 Vue.use(Router)
 
+
+
 export default new Router({
   routes: [
     {
       path: '/',
       component: index,
-
+      // redirect:'/Board',
       children: [
       	 {
           path: '',
