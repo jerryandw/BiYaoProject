@@ -1,9 +1,4 @@
-@import "../fragment/yo-header";
 
-@include yo-header(
-$name:"a",
-$bgcolor:yellowgreen
-)
 
 .m-index{
   height:100%;
@@ -12,33 +7,24 @@ $bgcolor:yellowgreen
   width: 100%;
 
   section{
-    @include flex(1);
-    background: gray;
+    @include flexbox();
+    @include flex-direction(column);
+    background: #fff;
     width: 100%;
-    .mint-swipe{
-      height: 1.9rem;
-      width: 100%;
-      img{
-        width: 100%;
-        height: 100%;
-      }
-    }
-    .mint-swipe-indicators{
-
-    }
-    &.int-swipe-indicator is-active{
-      color: #000;
-    }
+    height:100%;
+    overflow-y: scroll;
+    
 
   }
+  
+  
   nav{
     height: .44rem;
-    background: red;
+    background: #f6f3f4;
 
     ul{
       height: 100%;
       @include flexbox();
-
       width: 100%;
 
       li{
@@ -46,12 +32,17 @@ $bgcolor:yellowgreen
         @include flexbox();
         @include flex-direction(column);
         text-align: center;
+        font-size:.23rem;
+        span{
+            background:#eefa28;
+        }
         b{
-          font-size: .14rem;
-            font-weight: normal;
+          font-size: .12rem;
+          line-height: .23;
+          font-weight: normal;
         }
         &.active{
-          color: yellow;
+          color: #7f4395;
         }
       }
     }

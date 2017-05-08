@@ -1,0 +1,884 @@
+{
+    "pageCount": "2",
+    "pageIndex": "1",
+    "pageSize": "10",
+    "banners": [
+        {
+            "ext": {
+                "supplierID": "130140",
+                "title": "Origin Oasis 护肤品"
+            },
+            "pcImageUrl": "https://bfs.biyao.com/group1/M00/00/E0/wKhkVVkJpNyAZ3h-AAGw2O5tnaI980.jpg",
+            "image": "https://bfs.biyao.com/group1/M00/00/E0/wKhkVFkJpNiAEiU9AAE8FVImmC4350.jpg",
+            "webpImageUrl": "https://bfs.biyao.com/group1/M00/00/E0/wKhkVFkJpNiAEiU9AAE8FVImmC4350.webp",
+            "clickType": "3"
+        },
+        {
+            "ext": {
+                "supplierID": "130043",
+                "title": "百纷时装 iBuyFun"
+            },
+            "pcImageUrl": "https://bfs.biyao.com/group1/M00/00/E0/wKhkVVkJpLSAew6CAADzeIEzRxQ898.jpg",
+            "image": "https://bfs.biyao.com/group1/M00/00/E0/wKhkVVkJpK2ACTgmAADG1kOhCeo649.jpg",
+            "webpImageUrl": "https://bfs.biyao.com/group1/M00/00/E0/wKhkVVkJpK2ACTgmAADG1kOhCeo649.webp",
+            "clickType": "3"
+        },
+        {
+            "ext": {
+                "supplierID": "130086",
+                "title": "苏薇之恋女士内衣"
+            },
+            "pcImageUrl": "https://bfs.biyao.com/group1/M00/00/E0/wKhkVFkJpJGAAx0UAADeN1j5CJ0611.jpg",
+            "image": "https://bfs.biyao.com/group1/M00/00/E0/wKhkVFkJpI6AKMoRAADckge9rxA544.jpg",
+            "webpImageUrl": "https://bfs.biyao.com/group1/M00/00/E0/wKhkVFkJpI6AKMoRAADckge9rxA544.webp",
+            "clickType": "3"
+        },
+        {
+            "ext": {
+                "supplierID": "130045",
+                "title": "CM鞋履"
+            },
+            "pcImageUrl": "https://bfs.biyao.com/group1/M00/00/E0/wKhkVVkJpFSAemLqAAD2HcQR8bM750.jpg",
+            "image": "https://bfs.biyao.com/group1/M00/00/E0/wKhkVFkJpFGAfm_kAAEzx4X5wCE833.jpg",
+            "webpImageUrl": "https://bfs.biyao.com/group1/M00/00/E0/wKhkVFkJpFGAfm_kAAEzx4X5wCE833.webp",
+            "clickType": "3"
+        },
+        {
+            "ext": {
+                "supplierID": "130093",
+                "title": "Bland男装"
+            },
+            "pcImageUrl": "https://bfs.biyao.com/group1/M00/00/DF/wKhkVFkJpCyAVTMuAAH4Hwjb4gI219.jpg",
+            "image": "https://bfs.biyao.com/group1/M00/00/DF/wKhkVFkJpCiAVQU8AAFQGW8lVnc893.jpg",
+            "webpImageUrl": "https://bfs.biyao.com/group1/M00/00/DF/wKhkVFkJpCiAVQU8AAFQGW8lVnc893.webp",
+            "clickType": "3"
+        },
+        {
+            "ext": {
+                "supplierID": "130022",
+                "title": "必然眼镜"
+            },
+            "pcImageUrl": "https://bfs.biyao.com/group1/M00/00/DF/wKhkVFkJo_iAba-jAAHESySeXEk128.jpg",
+            "image": "https://bfs.biyao.com/group1/M00/00/DF/wKhkVFkJo_WATD9QAAFpGvpXnr4069.jpg",
+            "webpImageUrl": "https://bfs.biyao.com/group1/M00/00/DF/wKhkVFkJo_WATD9QAAFpGvpXnr4069.webp",
+            "clickType": "3"
+        }
+    ],
+    "article": {
+        "ext": {
+            "pcImageUrl": "https://bfs.biyao.com/group1/M00/00/E0/wKhkVVkJoXSAN8_tAABXTHHUnxs547.jpg",
+            "pcUrl": "http://news.biyao.com/pc/article/1ef7d7ee5b354590a2d30ab8c50aa3fb.html",
+            "articleId": 265,
+            "title": "养儿子不如养房子？",
+            "url": "http://news.biyao.com/m/article/fb61b51e7eb64043841f530c19dae59b.html"
+        },
+        "author": "老必",
+        "publishDate": "2017-05-03",
+        "description": "养孩子是陪伴一个生命的成长、哪有什么赚不赚、赔不赔的。",
+        "iconUrl": "https://bfs.biyao.com/group1/M00/00/1A/wKhkVFj-edmADpllAAAUli6cC9U929.png",
+        "clickType": "2"
+    },
+    "modules": [
+        {
+            "moduleType": "2",
+            "moduleInfo": {
+                "moduleTitle": "",
+                "moduleItems": [
+                    {
+                        "ext": {
+                            "title": "每日上新"
+                        },
+                        "pcImageUrl": "https://bfs.biyao.com/group1/M00/00/74/wKhkVFkC7RWAJ4OjAAEk_m9iZbs601.jpg",
+                        "image": "https://bfs.biyao.com/group1/M00/00/75/wKhkVVkC7QyARD8xAAD1qLQausM964.jpg",
+                        "webpImageUrl": "https://bfs.biyao.com/group1/M00/00/75/wKhkVVkC7QyARD8xAAD1qLQausM964.webp",
+                        "clickType": "7"
+                    },
+                    {
+                        "ext": {
+                            "title": "出行",
+                            "categoryID": "43"
+                        },
+                        "pcImageUrl": "https://bfs.biyao.com/group1/M00/00/75/wKhkVVkC7JOAYybBAACWC10Ya_U249.jpg",
+                        "image": "https://bfs.biyao.com/group1/M00/00/75/wKhkVVkC7GeAf8BgAABWDZw3KHo212.jpg",
+                        "webpImageUrl": "https://bfs.biyao.com/group1/M00/00/75/wKhkVVkC7GeAf8BgAABWDZw3KHo212.webp",
+                        "clickType": "4"
+                    },
+                    {
+                        "ext": {
+                            "title": "口罩",
+                            "categoryID": "177"
+                        },
+                        "pcImageUrl": "https://bfs.biyao.com/group1/M00/00/EE/wKhkVFkKjC6AZXX3AACi2XKo9Us508.jpg",
+                        "image": "https://bfs.biyao.com/group1/M00/00/EF/wKhkVVkKjCeACcq5AABbFv_MUXc400.jpg",
+                        "webpImageUrl": "https://bfs.biyao.com/group1/M00/00/EF/wKhkVVkKjCeACcq5AABbFv_MUXc400.webp",
+                        "clickType": "4"
+                    }
+                ]
+            }
+        },
+        {
+            "moduleType": "3",
+            "moduleInfo": {
+                "jumpType": 101,
+                "moduleImage": "https://bfs.biyao.com/group1/M00/00/0E/wKhkVFjq8P6AVIOyAACWXaInagc630.jpg",
+                "manufacturers": "依视路集团旗下",
+                "moduleTitle": "光学眼镜",
+                "moduleBrand": "企业制造",
+                "moduleItems": [
+                    {
+                        "ext": {
+                            "itemName": "钛架半框-开",
+                            "isModel": "1",
+                            "supplierID": 130022,
+                            "itemPrice": "279",
+                            "suId": "1300220055000140000",
+                            "salePoint": "选用高端航空专用钛，设计独特优雅。"
+                        },
+                        "image": "https://img.biyao.com/files/temp/79/79caf615d25e9e99.jpg",
+                        "clickType": "1"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "独特轻便太阳镜",
+                            "supplierID": 130022,
+                            "itemPrice": "249",
+                            "suId": "1300225002000000002",
+                            "salePoint": "材质轻薄，巧思设计，舒适佩戴"
+                        },
+                        "image": "https://bfs.biyao.com/group1/M00/00/F0/wKhkVVkKj1-AXxZyAABj0_QRpsg778.jpg",
+                        "clickType": "1"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "民国复古金属镜架",
+                            "isModel": "1",
+                            "supplierID": 130022,
+                            "itemPrice": "249",
+                            "suId": "1300220447001240000",
+                            "salePoint": "板材与金属结合，打造民国复古质感"
+                        },
+                        "image": "https://img.biyao.com/files/temp/d3/d3c25e12d968b3a7.jpg",
+                        "clickType": "1"
+                    }
+                ],
+                "webpImageUrl": "https://bfs.biyao.com/group1/M00/00/0E/wKhkVFjq8P6AVIOyAACWXaInagc630.webp",
+                "title": "光学眼镜",
+                "clickType": "4",
+                "ancestorCategoryIds": "122",
+                "categoryID": "122"
+            }
+        },
+        {
+            "moduleType": "3",
+            "moduleInfo": {
+                "jumpType": 101,
+                "moduleImage": "https://bfs.biyao.com/group1/M00/00/14/wKhkVVj4SX-ALVPmAACZNF2TAbI929.jpg",
+                "manufacturers": "Hugo Boss、PRADA",
+                "moduleTitle": "品质男装",
+                "moduleBrand": "制造商出品",
+                "moduleItems": [
+                    {
+                        "ext": {
+                            "itemName": "纯棉珠地短袖POLO",
+                            "isModel": "0",
+                            "supplierID": 130106,
+                            "itemPrice": "189",
+                            "suId": "1301065059010100001",
+                            "salePoint": "纯棉珠地，透气性、透湿性优良"
+                        },
+                        "image": "https://img.biyao.com/files/temp/65/659362233bd80450.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "男圆领精梳冰棉短袖T恤",
+                            "isModel": "0",
+                            "supplierID": 130062,
+                            "itemPrice": "219",
+                            "suId": "1300625077030200001",
+                            "salePoint": "轻薄透气、面料柔软、合身不拖沓"
+                        },
+                        "image": "https://bfs.biyao.com/group1/M00/00/58/wKhkVVkBtS2APhtAAABAVYJuCG4360.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "水柔丝光领口绣花短T",
+                            "isModel": "0",
+                            "supplierID": 130156,
+                            "itemPrice": "139",
+                            "suId": "1301565000080400001",
+                            "salePoint": "树枝绣花纵横交错 水柔丝光绵温润触感"
+                        },
+                        "image": "https://bfs.biyao.com/group1/M00/00/2F/wKhkVFj__byASxXHAAB0qLqINyg195.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "虎头刺绣短袖T恤",
+                            "isModel": "0",
+                            "supplierID": 130084,
+                            "itemPrice": "169",
+                            "suId": "1300845057060100001",
+                            "salePoint": "虎头刺绣  纯棉面料  单丝光质地"
+                        },
+                        "image": "https://img.biyao.com/files/data0/product/2017/04/12/18/0/3838580184396858.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "轻薄高弹合体修身",
+                            "isModel": "0",
+                            "supplierID": 130053,
+                            "itemPrice": "299",
+                            "suId": "1300535138030100001",
+                            "salePoint": "土耳其ORTA面料，轻薄舒适"
+                        },
+                        "image": "https://bfs.biyao.com/group1/M00/00/4E/wKhkVVkBhLyAIH6cAAB7Oliod4U706.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "天丝混纺 百搭清凉西裤",
+                            "isModel": "0",
+                            "supplierID": 130093,
+                            "itemPrice": "345",
+                            "suId": "1300935063110100001",
+                            "salePoint": "天丝混纺更清凉 大理石的纱织感 更百搭"
+                        },
+                        "image": "https://bfs.biyao.com/group1/M00/00/79/wKhkVFkC_7GARmx6AACYszEQgjw800.jpg",
+                        "clickType": "3"
+                    }
+                ],
+                "webpImageUrl": "https://bfs.biyao.com/group1/M00/00/14/wKhkVVj4SX-ALVPmAACZNF2TAbI929.webp",
+                "title": "品质男装",
+                "clickType": "4",
+                "ancestorCategoryIds": "1,2",
+                "categoryID": "2"
+            }
+        },
+        {
+            "moduleType": "3",
+            "moduleInfo": {
+                "jumpType": 101,
+                "moduleImage": "https://bfs.biyao.com/group1/M00/00/6D/wKhkVVkCu6CAEAk2AADqX-3BHBw802.jpg",
+                "manufacturers": "MaxMara、Diesel",
+                "moduleTitle": "潮流女装",
+                "moduleBrand": "制造商出品",
+                "moduleItems": [
+                    {
+                        "ext": {
+                            "itemName": "波浪袖小黑裙",
+                            "isModel": "0",
+                            "supplierID": 130043,
+                            "itemPrice": "329",
+                            "suId": "1300435134060200001",
+                            "salePoint": "黑色小A波浪背心裙，做精致小女人。"
+                        },
+                        "image": "https://bfs.biyao.com/group1/M00/00/4F/wKhkVVkBh52AObm-AABv3c8oVBQ589.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "撞色连衣裙",
+                            "isModel": "0",
+                            "supplierID": 130090,
+                            "itemPrice": "349",
+                            "suId": "1300905105010100001",
+                            "salePoint": "盈盈素女来，纤纤细步开。"
+                        },
+                        "image": "https://img.biyao.com/files/temp/26/26c53f930da86fa8.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "微弹七分袖女衬衫",
+                            "isModel": "0",
+                            "supplierID": 130106,
+                            "itemPrice": "199",
+                            "suId": "1301065084010100001",
+                            "salePoint": "修身版型、款式精致、经典七分袖"
+                        },
+                        "image": "https://img.biyao.com/files/data0/product/2017/04/24/21/0/8342789381560385.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "宽松舒适女友裤",
+                            "isModel": "0",
+                            "supplierID": 130053,
+                            "itemPrice": "249",
+                            "suId": "1300535156030100001",
+                            "salePoint": "纯棉面料，宽松版型，品质与舒适兼具"
+                        },
+                        "image": "https://bfs.biyao.com/group1/M00/00/7C/wKhkVFkDBEGANSePAAByXVImOeU463.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "四面弹阔腿裤",
+                            "isModel": "0",
+                            "supplierID": 130141,
+                            "itemPrice": "249",
+                            "suId": "1301415006110200001",
+                            "salePoint": "裤型舒适自然随性，垂悬利落"
+                        },
+                        "image": "https://img.biyao.com/files/data0/product/2017/04/20/10/0/4134470489481346.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "锥形九分裤",
+                            "isModel": "0",
+                            "supplierID": 130043,
+                            "itemPrice": "249",
+                            "suId": "1300435101010100001",
+                            "salePoint": "九分锥形裤，拉长腿形，帅气时尚"
+                        },
+                        "image": "https://img.biyao.com/files/data0/product/2017/04/12/08/0/7366696292773187.jpg",
+                        "clickType": "3"
+                    }
+                ],
+                "webpImageUrl": "https://bfs.biyao.com/group1/M00/00/6D/wKhkVVkCu6CAEAk2AADqX-3BHBw802.webp",
+                "title": "潮流女装",
+                "clickType": "4",
+                "ancestorCategoryIds": "1,8",
+                "categoryID": "8"
+            }
+        },
+        {
+            "moduleType": "3",
+            "moduleInfo": {
+                "jumpType": 101,
+                "moduleImage": "https://bfs.biyao.com/group1/M00/00/09/wKhkVFjcJRiAZb-qAACniExGTmM705.jpg",
+                "manufacturers": "CK、LA PERLA等",
+                "moduleTitle": "内衣袜子",
+                "moduleBrand": "制造商出品",
+                "moduleItems": [
+                    {
+                        "ext": {
+                            "itemName": "简约花边文胸内裤套装",
+                            "isModel": "0",
+                            "supplierID": 130086,
+                            "itemPrice": "179",
+                            "suId": "1300865093010200001",
+                            "salePoint": "丝滑牛奶丝面料"
+                        },
+                        "image": "https://bfs.biyao.com/group1/M00/00/DA/wKhkVVkJek-ASFHJAABP4lrRKl4057.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "莫代尔背心2件装",
+                            "isModel": "0",
+                            "supplierID": 130106,
+                            "itemPrice": "139",
+                            "suId": "1301065087010100001",
+                            "salePoint": "80支双面莫代尔高品质感"
+                        },
+                        "image": "https://bfs.biyao.com/group1/M00/00/8A/wKhkVVkD_I6ALdyqAABQ2PA-0d8271.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "防臭商务袜5双装",
+                            "isModel": "0",
+                            "supplierID": 130094,
+                            "itemPrice": "69",
+                            "suId": "1300945003010300001",
+                            "salePoint": "韩国进口新消臭纱线缓解、改善脚气"
+                        },
+                        "image": "https://img.biyao.com/files/temp/ad/ad053ab814969c0f.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "天鹅绒连裤袜x6",
+                            "isModel": "0",
+                            "supplierID": 130129,
+                            "itemPrice": "89",
+                            "suId": "1301295006060000001",
+                            "salePoint": "天鹅绒舒适触感 微压塑形"
+                        },
+                        "image": "https://img.biyao.com/files/temp/be/bea30bdccd901a5.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "女士无痕内裤5条",
+                            "isModel": "0",
+                            "supplierID": 130106,
+                            "itemPrice": "209",
+                            "suId": "1301065023010100001",
+                            "salePoint": "一片式无痕内裤，亲肤、柔软"
+                        },
+                        "image": "https://img.biyao.com/files/temp/f3/f3490deeaa8fe27e.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "天竺棉家居服短袖",
+                            "isModel": "0",
+                            "supplierID": 130092,
+                            "itemPrice": "159",
+                            "suId": "1300925006030900001",
+                            "salePoint": "天竺棉针织条纹，100%天竺棉"
+                        },
+                        "image": "https://img.biyao.com/files/data0/product/2017/04/24/09/0/1505731479580176.jpg",
+                        "clickType": "3"
+                    }
+                ],
+                "webpImageUrl": "https://bfs.biyao.com/group1/M00/00/09/wKhkVFjcJRiAZb-qAACniExGTmM705.webp",
+                "title": "内衣袜子",
+                "clickType": "4",
+                "ancestorCategoryIds": "1,108",
+                "categoryID": "108"
+            }
+        },
+        {
+            "moduleType": "3",
+            "moduleInfo": {
+                "jumpType": 101,
+                "moduleImage": "https://bfs.biyao.com/group1/M00/00/6D/wKhkVVkCvFKAUdi4AADu511SUp4889.jpg",
+                "manufacturers": "英国皇室御用服装",
+                "moduleTitle": "母婴儿童",
+                "moduleBrand": "制造商出品",
+                "moduleItems": [
+                    {
+                        "ext": {
+                            "itemName": "新生儿礼盒十件套",
+                            "isModel": "0",
+                            "supplierID": 130113,
+                            "itemPrice": "199",
+                            "suId": "1301135091030300001",
+                            "salePoint": "色织面料 亲水性佳 环保印染 送礼佳品"
+                        },
+                        "image": "https://img.biyao.com/files/data0/product/2017/04/01/00/0/7450231331612164.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "女装亲子纯棉七分袖T恤",
+                            "isModel": "0",
+                            "supplierID": 130107,
+                            "itemPrice": "99",
+                            "suId": "1301075073010600001",
+                            "salePoint": "落肩七分袖款式穿着舒适更显优雅气质"
+                        },
+                        "image": "https://bfs.biyao.com/group1/M00/00/67/wKhkVVkCnXCAPWFfAACbBaCbevo484.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "骑行滑步一体童车",
+                            "isModel": "0",
+                            "supplierID": 130121,
+                            "itemPrice": "469",
+                            "suId": "1301215001000100001",
+                            "salePoint": "健康骑行，必然快乐，孩子的第一辆跑车"
+                        },
+                        "image": "https://img.biyao.com/files/temp/46/46834d96ecb5da02.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "女款中大童棒球百褶裙",
+                            "isModel": "0",
+                            "supplierID": 130120,
+                            "itemPrice": "119",
+                            "suId": "1301205021110900001",
+                            "salePoint": "欧美经典款,运动感强"
+                        },
+                        "image": "https://bfs.biyao.com/group1/M00/00/47/wKhkVVkBXQiAP8YqAAA2LDXaGak350.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "春夏透气男女童鞋",
+                            "isModel": "0",
+                            "supplierID": 130131,
+                            "itemPrice": "169",
+                            "suId": "1301315004011000001",
+                            "salePoint": "超轻弯曲大底，透气网布，男女多色可选"
+                        },
+                        "image": "https://img.biyao.com/files/data0/product/2017/03/31/19/0/3899212092893799.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "1至4年级减负书包",
+                            "isModel": "1",
+                            "supplierID": 130101,
+                            "itemPrice": "159",
+                            "suId": "1301010007000000030",
+                            "salePoint": "国标A类减负儿童书包"
+                        },
+                        "image": "https://img.biyao.com/files/temp/16/166e63f3d2d4cfe9.jpg",
+                        "clickType": "3"
+                    }
+                ],
+                "webpImageUrl": "https://bfs.biyao.com/group1/M00/00/6D/wKhkVVkCvFKAUdi4AADu511SUp4889.webp",
+                "title": "母婴儿童",
+                "clickType": "4",
+                "ancestorCategoryIds": "128,129",
+                "categoryID": "128"
+            }
+        },
+        {
+            "moduleType": "3",
+            "moduleInfo": {
+                "jumpType": 101,
+                "moduleImage": "https://bfs.biyao.com/group1/M00/00/15/wKhkVFj4SdSAPLYaAADgIfg_jIM551.jpg",
+                "manufacturers": "LACOSTE等",
+                "moduleTitle": "男女鞋靴",
+                "moduleBrand": "制造商出品",
+                "moduleItems": [
+                    {
+                        "ext": {
+                            "itemName": "简约商务休闲男鞋",
+                            "isModel": "1",
+                            "supplierID": 130036,
+                            "itemPrice": "399",
+                            "suId": "1300360101000010000",
+                            "salePoint": "简约时尚商务设计 质感透气单层牛皮 "
+                        },
+                        "image": "https://img.biyao.com/files/temp/88/88bc9c980364f449.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "时尚潮流休闲鞋男",
+                            "isModel": "0",
+                            "supplierID": 130116,
+                            "itemPrice": "199",
+                            "suId": "1301165003030100001",
+                            "salePoint": "Vans品牌制造商出品，商务休闲鞋"
+                        },
+                        "image": "https://img.biyao.com/files/temp/b6/b632e09fabcf38dd.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "厚底沙滩鞋",
+                            "isModel": "0",
+                            "supplierID": 130045,
+                            "itemPrice": "119",
+                            "suId": "1300455025010600001",
+                            "salePoint": "夏季出游必备 厚实EVA鞋底"
+                        },
+                        "image": "https://img.biyao.com/files/data0/product/2017/04/03/14/0/5663107605119630.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "男士休闲鞋",
+                            "isModel": "0",
+                            "supplierID": 130124,
+                            "itemPrice": "369",
+                            "suId": "1301245014010100001",
+                            "salePoint": "松紧宜人  单层透气  经典男鞋"
+                        },
+                        "image": "https://img.biyao.com/files/data0/product/2017/04/21/18/0/9246590614142358.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "尖头圆口高跟鞋",
+                            "isModel": "0",
+                            "supplierID": 130045,
+                            "itemPrice": "339",
+                            "suId": "1300455022010100001",
+                            "salePoint": "经典工作鞋 65MM舒适跟高 不累脚"
+                        },
+                        "image": "https://img.biyao.com/files/data0/product/2017/04/03/10/0/6576226085598818.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "澳洲羊绒皮豆豆鞋",
+                            "isModel": "0",
+                            "supplierID": 130110,
+                            "itemPrice": "299",
+                            "suId": "1301105013010400001",
+                            "salePoint": "简约设计，轻便舒适，驾车豆豆鞋"
+                        },
+                        "image": "https://img.biyao.com/files/data0/product/2017/03/30/13/0/8850862975619691.jpg",
+                        "clickType": "3"
+                    }
+                ],
+                "webpImageUrl": "https://bfs.biyao.com/group1/M00/00/15/wKhkVFj4SdSAPLYaAADgIfg_jIM551.webp",
+                "title": "男女鞋靴",
+                "clickType": "4",
+                "ancestorCategoryIds": "35,37",
+                "categoryID": "35"
+            }
+        },
+        {
+            "moduleType": "3",
+            "moduleInfo": {
+                "jumpType": 101,
+                "moduleImage": "https://bfs.biyao.com/group1/M00/00/15/wKhkVVj4Se-AOW9ZAAC9J26HRds752.jpg",
+                "manufacturers": "斯凯奇、Saucony等",
+                "moduleTitle": "户外运动",
+                "moduleBrand": "制造商出品",
+                "moduleItems": [
+                    {
+                        "ext": {
+                            "itemName": "H.A.T综合训练鞋",
+                            "isModel": "0",
+                            "supplierID": 130153,
+                            "itemPrice": "289",
+                            "suId": "1301535000010200001",
+                            "salePoint": "轻质高灵活性适合多种运动的综合跑鞋"
+                        },
+                        "image": "https://img.biyao.com/files/data0/product/2017/04/17/13/0/8032198672175340.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "男士综训跑鞋",
+                            "isModel": "1",
+                            "supplierID": 130067,
+                            "itemPrice": "229",
+                            "suId": "1300670022000000000",
+                            "salePoint": "全方位掌控 让你适应任何运动场所"
+                        },
+                        "image": "https://img.biyao.com/files/temp/dd/dd1bdabc4c5a26f9.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "吸湿透气v领短袖T恤",
+                            "isModel": "0",
+                            "supplierID": 130059,
+                            "itemPrice": "119",
+                            "suId": "1300595017110100001",
+                            "salePoint": "速干功能面料，紫外线防护、吸湿排汗"
+                        },
+                        "image": "https://bfs.biyao.com/group1/M00/00/44/wKhkVVkBTT2ATPLMAABReX9WA4I948.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "女士休闲运动长裤",
+                            "isModel": "0",
+                            "supplierID": 130151,
+                            "itemPrice": "189",
+                            "suId": "1301515011060200001",
+                            "salePoint": "防泼水防静电，保持裤面洁净，吸湿排汗"
+                        },
+                        "image": "https://bfs.biyao.com/group1/M00/00/4D/wKhkVFkBgI2ANAj6AABw1raiDT4870.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "减震耐磨跑步袜×3",
+                            "isModel": "0",
+                            "supplierID": 130142,
+                            "itemPrice": "79",
+                            "suId": "1301425002010000001",
+                            "salePoint": "偏厚面料耐磨  足弓收紧  任意拉毛工艺"
+                        },
+                        "image": "https://img.biyao.com/files/data0/product/2017/02/18/19/0/8646971797022320.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "进攻型羽毛球拍",
+                            "isModel": "0",
+                            "supplierID": 130135,
+                            "itemPrice": "269",
+                            "suId": "1301355001030100001",
+                            "salePoint": "进口碳素 破风截面 挥拍自如"
+                        },
+                        "image": "https://img.biyao.com/files/data0/product/2017/04/05/15/0/7803742938721478.jpg",
+                        "clickType": "3"
+                    }
+                ],
+                "webpImageUrl": "https://bfs.biyao.com/group1/M00/00/15/wKhkVVj4Se-AOW9ZAAC9J26HRds752.webp",
+                "title": "户外运动",
+                "clickType": "4",
+                "ancestorCategoryIds": "39,191",
+                "categoryID": "39"
+            }
+        },
+        {
+            "moduleType": "3",
+            "moduleInfo": {
+                "jumpType": 101,
+                "moduleImage": "https://bfs.biyao.com/group1/M00/00/15/wKhkVFj4ShWAEqL7AADpBdu6SZU431.jpg",
+                "manufacturers": "COACH、MK",
+                "moduleTitle": "皮具配件",
+                "moduleBrand": "制造商出品",
+                "moduleItems": [
+                    {
+                        "ext": {
+                            "itemName": "男士不锈钢自动扣皮带",
+                            "isModel": "0",
+                            "supplierID": 130119,
+                            "itemPrice": "269",
+                            "suId": "1301195136060100001",
+                            "salePoint": "优质钢扣  头层牛皮  蝶形车线加固缝合"
+                        },
+                        "image": "https://img.biyao.com/files/data0/product/2017/03/30/14/0/8239966838178551.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "防盗单肩胸包",
+                            "isModel": "0",
+                            "supplierID": 130105,
+                            "itemPrice": "249",
+                            "suId": "1301055006060000001",
+                            "salePoint": "YKK拉链、防盗设计、台湾进口内衬"
+                        },
+                        "image": "https://img.biyao.com/files/data0/product/2017/04/19/15/0/1285273224799123.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "牛皮卡包零钱包",
+                            "isModel": "0",
+                            "supplierID": 130119,
+                            "itemPrice": "159",
+                            "suId": "1301195100030000001",
+                            "salePoint": "小体积大容量 头层牛皮零钱包 相片位"
+                        },
+                        "image": "https://img.biyao.com/files/data0/product/2017/03/27/16/0/8545039767743758.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "头层细纹牛皮小号单肩包",
+                            "isModel": "0",
+                            "supplierID": 130091,
+                            "itemPrice": "499",
+                            "suId": "1300915042060000001",
+                            "salePoint": "小巧身材内格分明，收纳有序百搭时尚"
+                        },
+                        "image": "https://bfs.biyao.com/group1/M00/00/52/wKhkVFkBmb2ADzAwAAAfRXuQjgU518.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "大锁扣真皮女包",
+                            "isModel": "0",
+                            "supplierID": 130126,
+                            "itemPrice": "669",
+                            "suId": "1301265001130000001",
+                            "salePoint": "软质皮料，手提，单肩，斜挎多用"
+                        },
+                        "image": "https://img.biyao.com/files/data0/product/2017/04/05/11/0/0795418104536180.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "头层细纹牛皮手提单肩包",
+                            "isModel": "0",
+                            "supplierID": 130091,
+                            "itemPrice": "659",
+                            "suId": "1300915035140000001",
+                            "salePoint": "手提单肩两用，包内设有夹层，收纳有序"
+                        },
+                        "image": "https://img.biyao.com/files/data0/product/2017/03/28/21/0/0735586110969181.jpg",
+                        "clickType": "3"
+                    }
+                ],
+                "webpImageUrl": "https://bfs.biyao.com/group1/M00/00/15/wKhkVFj4ShWAEqL7AADpBdu6SZU431.webp",
+                "title": "皮具配件",
+                "clickType": "4",
+                "ancestorCategoryIds": "153,209",
+                "categoryID": "153"
+            }
+        },
+        {
+            "moduleType": "3",
+            "moduleInfo": {
+                "jumpType": 101,
+                "moduleImage": "https://bfs.biyao.com/group1/M00/00/15/wKhkVVj4SvyAIv7fAAD0QAoIJ9I694.jpg",
+                "manufacturers": "新秀丽、NIKE等",
+                "moduleTitle": "出行必备",
+                "moduleBrand": "制造商出品",
+                "moduleItems": [
+                    {
+                        "ext": {
+                            "itemName": "牛津单肩包胸包",
+                            "isModel": "0",
+                            "supplierID": 130065,
+                            "itemPrice": "109",
+                            "suId": "1300655010110000001",
+                            "salePoint": "多功能设计，三种出行模式，细分化收纳"
+                        },
+                        "image": "https://img.biyao.com/files/data0/product/2017/03/31/11/0/1959007925324894.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "GF合金包角铝框箱",
+                            "isModel": "1",
+                            "supplierID": 130060,
+                            "itemPrice": "359",
+                            "suId": "1300600002000000000",
+                            "salePoint": "合金包角，防撞耐磨，360度万向轮"
+                        },
+                        "image": "https://img.biyao.com/files/temp/f0/f06b5d2fc24ab5e2.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "收纳盒装儿童口罩",
+                            "isModel": "0",
+                            "supplierID": 130122,
+                            "itemPrice": "59",
+                            "suId": "1301225010130000001",
+                            "salePoint": "可塑鼻条、多层防护、独立口罩收纳盒"
+                        },
+                        "image": "https://img.biyao.com/files/data0/product/2017/04/12/23/0/0853682076269629.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "CB防刮拉链箱",
+                            "isModel": "1",
+                            "supplierID": 130103,
+                            "itemPrice": "199",
+                            "suId": "1301030006000010020",
+                            "salePoint": "199元起"
+                        },
+                        "image": "https://img.biyao.com/files/temp/3f/3f8b5cfb3607a96b.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "铠装铝合金拉杆箱",
+                            "isModel": "1",
+                            "supplierID": 130117,
+                            "itemPrice": "1449",
+                            "suId": "1301170010000000010",
+                            "salePoint": "一体成型 无缝拼接 超厚氧化膜"
+                        },
+                        "image": "https://img.biyao.com/files/temp/78/78db112d3927bb3d.jpg",
+                        "clickType": "3"
+                    },
+                    {
+                        "ext": {
+                            "itemName": "WIN防爆PP拉链箱",
+                            "isModel": "0",
+                            "supplierID": 130133,
+                            "itemPrice": "288",
+                            "suId": "1301335001020200001",
+                            "salePoint": "防爆拉链 金属护角 环保 万向轮"
+                        },
+                        "image": "https://img.biyao.com/files/temp/34/34669369a416fc4a.jpg",
+                        "clickType": "3"
+                    }
+                ],
+                "webpImageUrl": "https://bfs.biyao.com/group1/M00/00/15/wKhkVVj4SvyAIv7fAAD0QAoIJ9I694.webp",
+                "title": "出行必备",
+                "clickType": "4",
+                "ancestorCategoryIds": "43,47",
+                "categoryID": "43"
+            }
+        }
+    ]
+}

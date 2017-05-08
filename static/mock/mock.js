@@ -1,6 +1,7 @@
-let swiper = require('swiper.json')
-module.exports = function(){
-  return{
-         
+let home = require('./home.json')
+
+module.exports = function () {
+  return {
+    'home': home
   }
 }
