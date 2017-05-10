@@ -7,7 +7,8 @@ import List from '@/scripts/components/List'
 import Car from '@/scripts/components/Car'
 import My from '@/scripts/components/My'
 import Board from '@/scripts/components/Board'
-
+import login from '@/scripts/components/login'
+import sign from '@/scripts/components/sign'
 
 
 Vue.use(Router)
@@ -43,6 +44,16 @@ export default new Router({
 
         }
       ]
+
+    },
+    {
+      path:'/login',
+      component:login
+
+    },
+    {
+      path:'/sign',
+      component:sign
 
     }
       ]
