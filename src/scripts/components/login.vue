@@ -5,12 +5,12 @@
           <img src="/static/shopimage/ic_launcher.png" />
       </div>
       <div class="phone">
-        <input type="text" placeholder="请输入手机号" /></br>
+        <input type="text" placeholder="请输入手机号" v-model="username" /></br>
       </div>
       <div  class="passworld">
-        <input type="text" ref="password" placeholder="请输入密码"/></br>
+        <input type="text" ref="password" placeholder="请输入密码" v-model="password"/></br>
       </div>
-      <div class="btnn">
+      <div class="btnn" @click="login">
         <input type="button" value="登录" />
       </div>
       <div class="title">
@@ -32,6 +32,9 @@
     </div>
 </template>
 <script>
+    import Vue from 'vue';
+    //import axios from 'axios'
+    //import Axios from '../../utils/axios.js'
 export default {
   data(){
     return({
@@ -46,7 +49,11 @@ export default {
   methods: {
       back:function(){
         this.$router.go(-1);
-      }
+      // },
+      // login:function(){
+      //   let that = this;
+      // }
   }
+}
 }
 </script>
