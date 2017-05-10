@@ -1,0 +1,86 @@
+.login-index{
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  p{
+    height: .4rem;
+    line-height: .4rem;
+    padding: 0 .1rem;
+
+    img{
+      transform:rotate(180deg);
+      width: .1.5rem;
+      height: .17rem;
+    }
+  }
+  .logo{
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    img{
+      width: .7rem;
+      height: .7rem;
+    }
+  }
+  .phone{
+    width: 100%;
+    height: .45rem;
+    //text-align: center;
+      padding: 0 .2rem;
+      line-height: .45rem;
+      input{
+        width: 2rem;
+        height: .45rem;
+        line-height: .45rem;
+      }
+    }
+    .passworld{
+      width: 100%;
+      height: .45rem;
+      line-height: .45rem;
+      padding: 0 .2rem;
+      input{
+        width: 2rem;
+        height: .45rem;
+        line-height: .45rem;
+      }
+    }
+      .btnn{
+        width: 100%;
+        height: .45rem;
+        line-height: .45rem;
+        padding: 0 .4rem;
+        margin-top: .1rem;
+        input{
+          width: 100%;
+          height: .45rem;
+          line-height: .45rem;
+          @include border(1px 1px 1px 1px,#eee,solid,20px);
+          background: #7f4395;
+          color: #fff;
+          font-size: .25rem;
+        }
+      }
+      .title{
+        height: .5rem;
+        line-height: .5rem;
+        @include flexbox();
+        padding: 0 .2rem;
+        color: #7f4395;
+        span{
+          @include flex();
+        }
+        span:nth-of-type(2){
+          text-align:right;
+        }
+      }
+      .bottom{
+        height: 2rem;
+        width: 100%;
+        margin-top: 1rem;
+        p{
+          text-align: center;
+        }
+      }
+
+  }

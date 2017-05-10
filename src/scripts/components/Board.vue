@@ -1,44 +1,44 @@
 <template>
 	<div class="m-board">
-	
+
 	<header class="yo-header yo-header-a">
       <h2 class="title">必要</h2>
       <span class="regret yo-ico">&#xf067;</span>
 	</header>
-	
+
 
 	<mt-swipe :auto="4000">
 	    <mt-swipe-item v-for="item in bannerimglist" :key="item">
 	      <img class="lb" :src="item.webpImageUrl"/>
-	      
+
 	    </mt-swipe-item>
 	</mt-swipe>
-	
+
 	<div class="saynew">
 		<img src="../../../static/imges/new/images/news_02.png" />
 		<span class="saynew-center" v-text="saynew"><span>|</span>{{saynew}}</span>
 		<span class="yo-ico saynew-right">&#xf07f;</span>
 	</div>
-	
+
 	<div class="new">
-		<img class="left" src="http://bfs.biyao.com/group1/M00/00/75/wKhkVVkC6_2AXP6gAAEJNJjr17Q252.jpg" />
+		<img class="left" src="http://bfs.biyao.com/group1/M00/00/75/wKhkVVkC6_2AXP6gAAEJNJjr17Q252.jpg"/>
 		<div class="right">
 			<img class="saynew-right-top" src="http://bfs.biyao.com/group1/M00/01/27/wKhkVFkMKO6AOcQcAAB78YLr0k0785.jpg"/>
 			<img src="http://bfs.biyao.com/group1/M00/00/75/wKhkVVkC69GAGc6fAACS2D7m7vI709.jpg"/>
 		</div>
 	</div>
-	
+
 	<div class="imgnew">
 		<p>精选</p>
 		<div class="imgnew-list">
 			<img  src="http://bfs.biyao.com/group1/M00/01/08/wKhkVVkK-G-AYPB8AACNH9IPRaI313.jpg"/>
 			<img src="http://bfs.biyao.com/group1/M00/01/08/wKhkVFkK-LqAa-6CAACJGicq1Io670.jpg" />
-	
+
 		</div>
 	</div>
-	
+
 	<ul class="main">
-	
+
 	<li>
 		<h2 >光学眼镜<span class="yo-ico">&#xf07f;</span></h2>
 		<div class="imgbig">
@@ -50,7 +50,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="text">
 		<ul>
 		<li>
@@ -76,9 +76,9 @@
 		</ul>
 		</div>
 	</li>
-	
+
 	</ul>
-	
+
 
 </div>
 </template>
@@ -92,7 +92,7 @@ import 'mint-ui/lib/style.css'
 
 Vue.component(Swipe.name, Swipe);
 Vue.component(SwipeItem.name, SwipeItem);
-  
+
 export default{
 	data(){
 	    return {
@@ -110,10 +110,7 @@ export default{
       	that.saynew=res.data.article.ext.title
       }
     })
-  }
-	
-	
-    
-      
+ }
+
 }
 </script>

@@ -1,0 +1,153 @@
+.myself{
+  height: 100%;
+  width: 100%;
+  background: #eee;
+  @include flexbox();
+  @include flex-direction(column);
+  .top{
+    height: 2.6rem;
+    background:#7f4395;
+    color: #fff;
+    p{
+      width: 100%;
+      height: .6rem;
+        position: relative;
+      img{
+        width: .31rem;
+        height: .25rem;
+        position: absolute;
+        right: .1rem;
+        top:.05rem;
+      }
+    }
+    .my-image{
+      text-align: center;
+
+      img{
+        color: #fff;
+      }
+    }
+    i{
+      text-align: center;
+      line-height: .7rem;
+      line-height: .7rem;
+      display: inline-block;
+      width: 100%;
+      span{
+        color: #fff;
+        font-size: .14rem;
+      }
+
+    }
+  }
+  .my-order{
+    margin-top: .15rem;
+    background: #fff;
+    height: .5rem;
+    line-height: .5rem;
+    padding: 0 .1rem;
+    @include border(0 0 1px 0,#ddd);
+    @include flexbox();
+    @include flex-direction();
+    i{
+      @include flex();
+
+    }
+    i:nth-of-type(1){
+      font-size: .16rem;
+    }
+    i:nth-of-type(2){
+      text-align: right;
+      img{
+        width: .1.5rem;
+        height: .15rem;
+        margin-left: .1rem;
+      }
+    }
+  }
+  .order-list{
+    height: .85rem;
+    background: #fff;
+    ul{
+      height: .8rem;
+      @include flexbox();
+      @include flex-direction();
+      width: 100%;
+      li{
+        @include flex();
+        padding-top:.15rem;
+        text-align: center;
+        img{
+          height: .27rem;
+          text-align: center;
+          width: .3rem;
+        }
+        p{
+
+          width: 100%;
+          line-height: .4rem;
+          height: .4rem;
+        }
+      }
+    }
+  }
+  .setting{
+    height: .45rem;
+    line-height: .45rem;
+    @include flexbox();
+    @include flex-direction();
+    background: #fff;
+    margin-top: .15rem;
+    padding: 0 .1rem;
+    @include border(0 0 1px 0,#ddd);
+    i{
+      @include flex();
+    }
+    i:nth-of-type(1){
+      font-size: .16rem;
+    }
+    i:nth-of-type(2){
+      text-align: right;
+      img{
+        width: .1rem;
+        height: .15rem;
+      }
+    }
+  }
+  .kf{
+    height: .45rem;
+    line-height: .45rem;background: #fff;
+    padding: 0 .1rem;
+    @include flexbox();
+    span{
+      @include flex();
+    }
+    span:nth-of-type(1){
+      i{
+        color: #ddd;
+      }
+    }
+    span:nth-of-type(2){
+      text-align: right;
+      img{
+        width: .1rem;
+        height: .15rem;
+        margin-left: .1rem;
+      }
+    }
+  }
+  .kong{
+    @include flex();
+    width: 100%;
+    position: relative;
+    text-align: center;
+    p{
+      line-height: .3rem;
+      height: .3rem;
+      width: 100%;
+      font-size: .12rem;
+      position: absolute;
+      bottom: .1rem;
+    }
+  }
+}
