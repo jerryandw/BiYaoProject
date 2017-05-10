@@ -7,8 +7,9 @@ import List from '@/scripts/components/List'
 import Car from '@/scripts/components/Car'
 import My from '@/scripts/components/My'
 import Board from '@/scripts/components/Board'
-
-
+import Search from '@/scripts/components/Search'
+import Detail from '@/scripts/components/Detail'
+Detail
 
 Vue.use(Router)
 
@@ -43,7 +44,13 @@ export default new Router({
 
         }
       ]
-
+			
+    },{
+    	path: '/search',
+    	component:Search
+    },{
+    	path: '/detail',
+    	component:Detail
     }
       ]
 })

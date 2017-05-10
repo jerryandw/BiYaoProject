@@ -3,14 +3,15 @@
 	
 	<header class="yo-header yo-header-a">
       <h2 class="title">必要</h2>
-      <span class="regret yo-ico">&#xf067;</span>
+      <router-link tag="span" to="search" class="regret yo-ico" >
+      &#xf067;</router-link>
 	</header>
 	
 	<div class="board-section">
+		<div class="board-section-box">
 	<mt-swipe :auto="4000">
 	    <mt-swipe-item v-for="item in bannerimglist" :key="item">
 	      <img class="lb" :src="item.webpImageUrl"/>
-	      
 	    </mt-swipe-item>
 	</mt-swipe>
 	
@@ -21,10 +22,10 @@
 	</div>
 	
 	<div class="new" >
-		<img class="left"  v-lazy="newimgs[0].webpImageUrl" />
+		<img class="left" v-lazy="newimgs.length > 0 ? newimgs[0].webpImageUrl : ''" />
 		<div class="right">
-			<img class="saynew-right-top" v-lazy="newimgs[1].webpImageUrl"/>
-			<img v-lazy="newimgs[2].webpImageUrl"/>
+			<img class="saynew-right-top" v-lazy="newimgs.length > 0 ? newimgs[1].webpImageUrl: ''"/>
+			<img v-lazy="newimgs.length > 0 ? newimgs[2].webpImageUrl: ''"/>
 		</div>
 	</div>
 	
@@ -54,7 +55,7 @@
 		</div>
 		
 		<div class="text">
-		<ul>
+		<ul v-bind:style="{width:(item.moduleItemsU*1.25)+'rem'}">
 		<li v-for="item in item.moduleItems">
 			<img :src="item.image"/>
 			<p>{{item.ext.itemName}}</p>
@@ -65,9 +66,10 @@
 		</div>
 	</li>
 	
-	</ul>
+</ul>
 		 
 </mt-loadmore>
+		</div>
 	</div>
 
 </div>
@@ -76,10 +78,12 @@
 
 <script>
 import Vue from "vue"
+import Router from "vue-router"
 import utilAxios from '../utils/axios'
 import { Swipe, SwipeItem ,Lazyload,Loadmore} from 'mint-ui'
 import 'mint-ui/lib/style.css'
 
+Vue.use(Router)
 Vue.use(Lazyload);
 Vue.component(Swipe.name, Swipe);
 Vue.component(Loadmore.name, Loadmore);
@@ -96,9 +100,27 @@ export default{
 	    }
   },
   methods:{
-	
+	toseach:function(){
+		this.$router.go('/seach')
+	},
 	loadBottom: function(){
-		console.log(1)
+		let that=this
+		utilAxios.get({
+			url:"/api/getHomeModuleInfo?pageIndex=2&pageSize=10",
+			method:"get",
+			callback:function(res){
+			for(let i=0; i<res.data.data.modules.length; i++){
+        	 if(res.data.data.modules[i].moduleType==3){
+        	that.maindata.push(res.data.data.modules[i].moduleInfo)		
+      let ullength=res.data.data.modules[i].moduleInfo.moduleItems.length
+        	let	n=that.maindata.length-1
+        	that.maindata[n].moduleItemsU=ullength
+        	
+        	}
+        	}
+			
+			}
+		})
 		this.allLoaded = true
   		this.$refs.loadmore.onBottomLoaded()
 	}
@@ -118,8 +140,14 @@ export default{
         for(let i=0; i<res.data.modules.length; i++){
         	if(res.data.modules[i].moduleType==3){
         		that.maindata.push(res.data.modules[i].moduleInfo)
+        	let ullength=res.data.modules[i].moduleInfo.moduleItems.length
+        	let	n=that.maindata.length-1
+        	that.maindata[n].moduleItemsU=ullength
+        	
         	}
         }
+      
+        
       }
     })
   }
