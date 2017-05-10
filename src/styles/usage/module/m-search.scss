@@ -1,0 +1,44 @@
+
+
+@include yo-header(
+    $name:search,
+    $bgcolor:#fff,
+    $color:#000,
+    $item-ico-color:#808080,
+    $border-width:0
+)
+
+@include yo-search(
+    $name:search,
+    $bgcolor:#ccb4d5,
+    $btn-bgcolor: transparent
+){
+    
+}
+
+.m-search{
+    .seach-bottom{
+        padding-left:.20rem;
+        p{
+            height: .40rem;
+            font-size: .16rem;
+            color: #ccb4d5;
+            line-height: .44rem;
+        }
+        ul{
+            @include flexbox();
+            @include flex-wrap(wrap);
+            
+            li{
+                height: .23rem;
+                text-align: center;
+                line-height: .23rem;
+                border:1px solid #cfcfcf;
+                font-size: .12rem;
+                margin: 0 .20rem .15rem 0;
+                padding: 0 .08rem;
+                border-radius: .05rem;
+            }
+        }
+    }
+}
