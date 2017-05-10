@@ -1,0 +1,261 @@
+
+
+{
+    "categoryList": [
+        {
+            "categoryId": 122,
+            "categoryName": "眼镜",
+            "subCategoryList": []
+        },
+        {
+            "categoryId": 1,
+            "categoryName": "服装",
+            "subCategoryList": [
+                {
+                    "categoryId": 2,
+                    "categoryName": "男装"
+                },
+                {
+                    "categoryId": 8,
+                    "categoryName": "女装"
+                },
+                {
+                    "categoryId": 108,
+                    "categoryName": "内衣袜子"
+                },
+                {
+                    "categoryId": 158,
+                    "categoryName": "配饰"
+                }
+            ]
+        },
+        {
+            "categoryId": 128,
+            "categoryName": "婴童",
+            "subCategoryList": [
+                {
+                    "categoryId": 129,
+                    "categoryName": "母婴"
+                },
+                {
+                    "categoryId": 130,
+                    "categoryName": "儿童"
+                },
+                {
+                    "categoryId": 135,
+                    "categoryName": "包"
+                },
+                {
+                    "categoryId": 219,
+                    "categoryName": "童鞋"
+                },
+                {
+                    "categoryId": 175,
+                    "categoryName": "单车"
+                },
+                {
+                    "categoryId": 169,
+                    "categoryName": "亲子"
+                }
+            ]
+        },
+        {
+            "categoryId": 35,
+            "categoryName": "鞋靴",
+            "subCategoryList": [
+                {
+                    "categoryId": 37,
+                    "categoryName": "男鞋"
+                },
+                {
+                    "categoryId": 38,
+                    "categoryName": "女鞋"
+                }
+            ]
+        },
+        {
+            "categoryId": 39,
+            "categoryName": "运动",
+            "subCategoryList": [
+                {
+                    "categoryId": 191,
+                    "categoryName": "运动服"
+                },
+                {
+                    "categoryId": 40,
+                    "categoryName": "运动鞋"
+                },
+                {
+                    "categoryId": 228,
+                    "categoryName": "运动袜"
+                },
+                {
+                    "categoryId": 216,
+                    "categoryName": "体育用品"
+                }
+            ]
+        },
+        {
+            "categoryId": 153,
+            "categoryName": "皮具",
+            "subCategoryList": [
+                {
+                    "categoryId": 209,
+                    "categoryName": "女包"
+                },
+                {
+                    "categoryId": 154,
+                    "categoryName": "男包"
+                },
+                {
+                    "categoryId": 155,
+                    "categoryName": "皮带"
+                }
+            ]
+        },
+        {
+            "categoryId": 43,
+            "categoryName": "出行",
+            "subCategoryList": [
+                {
+                    "categoryId": 47,
+                    "categoryName": "休闲包"
+                },
+                {
+                    "categoryId": 44,
+                    "categoryName": "拉杆箱"
+                },
+                {
+                    "categoryId": 151,
+                    "categoryName": "收纳"
+                },
+                {
+                    "categoryId": 177,
+                    "categoryName": "口罩"
+                }
+            ]
+        },
+        {
+            "categoryId": 54,
+            "categoryName": "个护",
+            "subCategoryList": []
+        },
+        {
+            "categoryId": 119,
+            "categoryName": "美妆",
+            "subCategoryList": [
+                {
+                    "categoryId": 120,
+                    "categoryName": "护肤"
+                },
+                {
+                    "categoryId": 214,
+                    "categoryName": "彩妆"
+                },
+                {
+                    "categoryId": 181,
+                    "categoryName": "洗护"
+                }
+            ]
+        },
+        {
+            "categoryId": 58,
+            "categoryName": "居家",
+            "subCategoryList": [
+                {
+                    "categoryId": 60,
+                    "categoryName": "床品"
+                },
+                {
+                    "categoryId": 90,
+                    "categoryName": "洗浴"
+                },
+                {
+                    "categoryId": 104,
+                    "categoryName": "日用"
+                },
+                {
+                    "categoryId": 205,
+                    "categoryName": "布艺"
+                },
+                {
+                    "categoryId": 237,
+                    "categoryName": "装饰画"
+                }
+            ]
+        },
+        {
+            "categoryId": 51,
+            "categoryName": "厨具",
+            "subCategoryList": [
+                {
+                    "categoryId": 187,
+                    "categoryName": "水具"
+                },
+                {
+                    "categoryId": 231,
+                    "categoryName": "小家电"
+                },
+                {
+                    "categoryId": 185,
+                    "categoryName": "刀具"
+                },
+                {
+                    "categoryId": 186,
+                    "categoryName": "锅具"
+                },
+                {
+                    "categoryId": 195,
+                    "categoryName": "餐具"
+                },
+                {
+                    "categoryId": 52,
+                    "categoryName": "厨用小件"
+                }
+            ]
+        },
+        {
+            "categoryId": 10,
+            "categoryName": "家具",
+            "subCategoryList": [
+                {
+                    "categoryId": 11,
+                    "categoryName": "工具"
+                },
+                {
+                    "categoryId": 12,
+                    "categoryName": "灯具"
+                },
+                {
+                    "categoryId": 164,
+                    "categoryName": "卫浴"
+                },
+                {
+                    "categoryId": 14,
+                    "categoryName": "卧室"
+                },
+                {
+                    "categoryId": 15,
+                    "categoryName": "书房"
+                },
+                {
+                    "categoryId": 13,
+                    "categoryName": "客厅"
+                },
+                {
+                    "categoryId": 16,
+                    "categoryName": "餐厅"
+                },
+                {
+                    "categoryId": 234,
+                    "categoryName": "儿童家具"
+                }
+            ]
+        },
+        {
+            "categoryId": 223,
+            "categoryName": "数码",
+            "subCategoryList": []
+        }
+    ]
+}
