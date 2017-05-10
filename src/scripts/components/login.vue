@@ -1,6 +1,6 @@
 <template>
   <div class="login-index">
-      <p><img src="/static/shopimage/icon_more.png" /></p>
+      <p class="m-lg-box" @click="back"><img src="/static/shopimage/icon_more.png" /></p>
       <div class="logo">
           <img src="/static/shopimage/ic_launcher.png" />
       </div>
@@ -31,14 +31,22 @@
       </div>
     </div>
 </template>
-
 <script>
 export default {
-  name: "",
-  data: function data() {
-    return {
+  data(){
+    return({
+      username:'',
+      password:''
+    })
+  },
 
-    }
+  mounted: function () {
+    //do something after mounting vue instance
+  },
+  methods: {
+      back:function(){
+        this.$router.go(-1);
+      }
   }
 }
 </script>

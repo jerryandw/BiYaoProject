@@ -15,14 +15,12 @@
   }
   .logo{
     height: 2rem;
-  //  background: pink;
     line-height: 2rem;
     text-align: center;
     img{
       width: .7rem;
       height: .7rem;
     }
-
   }
   .phone{
     width: 100%;
@@ -34,9 +32,6 @@
         width: 2rem;
         height: .45rem;
         line-height: .45rem;
-
-      //  @include border-bottom(1px solid red)
-      //  text-align: center;
       }
     }
     .passworld{
@@ -48,8 +43,6 @@
         width: 2rem;
         height: .45rem;
         line-height: .45rem;
-      //  @include border-bottom(1px solid red)
-      //  text-align: center;
       }
     }
       .btnn{
@@ -58,7 +51,6 @@
         line-height: .45rem;
         padding: 0 .4rem;
         margin-top: .1rem;
-        //text-align: center;
         input{
           width: 100%;
           height: .45rem;
