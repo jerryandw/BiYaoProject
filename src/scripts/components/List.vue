@@ -3,57 +3,112 @@
 	<div class="m-list">
 		<div class="list-head">
 			<ul>
-				<li class="active">眼镜</li>
-				<li>服装</li>
-				<li>婴童</li>
-				<li>鞋靴</li>
-				<li>运动</li>
-				<li>皮具</li>
-				<li>出行</li>
-				<li>个护</li>
-				<li>美妆</li>
-				<li>居家</li>
-				<li>厨具</li>
-				<li>家具</li>
-				<li>数码</li>
+				<li  v-for="(item,index) in categoryList" :class="{ active: index2==index}" @click="getSub(index)" >
+					{{item.categoryName}}
+				</li>
 			</ul>
 		</div>
 		<div class="list-content">
 			<div class="good-classify">
 				<ul>
-					<li class="active">运动服</li>
-					<li>运动鞋</li>
-					<li>运动袜</li>
-					<li>体育用品</li>
+				<li v-for="(item,index) in subCategoryList" :class="{ active: index3==index }" @click="setIndex(item,index)">
+					{{item.categoryName}}
+				</li>
 				</ul>
-			</div>
-			<div class="good-title">
-				<span>运动服·北面等制造商出品</span>
 			</div>
 		</div>
 		<div class="good-list">
-				<ul>
-					<li>
-						<div class="good-pic">
-							<img src="https://img.biyao.com/files/temp/65/659362233bd80450.jpg" alt="">
-						</div>
-						<span class="good-name">防晒透气时尚圆领短袖T恤</span>
-						<span class="good-pri"><em>￥</em>129</span>
-					</li>
-					
-				</ul>
+			<div class="good-title">
+				<span>{{categoryName}}</span>
 			</div>
+			<ul>
+				<li v-for="(product,index) in productList" >
+					<div class="good-pic">
+						<!-- <img src="https://img.biyao.com/files/temp/79/79caf615d25e9e99.jpg" alt=""> -->
+						<img :src=product.imageUrl >
 
+					</div>
+					<span class="good-name">{{product.title}}</span>
+					<span class="good-pri"><em>￥</em>{{product.price}}</span>
+				</li>
+			</ul>
+		</div>
 	</div>
 	
 </template>
 
 <script>
-	export default {}
+
+	import Vue from "vue"
+	import utilAxios from '../utils/axios'
+	import { Swipe, SwipeItem } from 'mint-ui'
+	import 'mint-ui/lib/style.css'
+
+	Vue.component(Swipe.name, Swipe);
+	Vue.component(SwipeItem.name, SwipeItem);
+
+	export default {
+
+		data(){
+
+			return{	
+				categoryList:[],
+				subCategoryList:[],
+				categoryId:122,
+				productList:[],
+				categoryName:null,
+				num:0,
+				index2:0,
+				index3:0
+				
+			}
+		},
+
+		methods:{
+
+			getSub(index){
+
+				this.index2 = index;
+				this.index3 = 0;
+				this.subCategoryList = this.categoryList[index].subCategoryList;
+				this.categoryId = this.categoryList[index].categoryId;
+			},
+
+			setIndex(item,index) {
+		        this.index3 = index;
+		        //console.log(this.index2)
+		    },
+
+		},
+
+		mounted: function () {
+		    var that = this
+		    utilAxios.get({
+		      url: '/mock/classify',
+		      method: 'get',
+		      callback: function (res) {
+		      
+		      	that.categoryList = res.data.categoryList;	
+		      	that.subCategoryList = res.data.categoryList[that.num].subCategoryList;
+		      	that.categoryId = res.data.categoryList[that.num].categoryId;
+		      	//console.log("categoryList="+that.categoryList)
+     			//console.log("subCategoryList="+that.subCategoryList)
+		      }
+		    })
+
+		 
+		    utilAxios.get({
+		      url: '/api/classify/getCategoryProduct?categoryID=122',
+		      method: 'get',
+		      callback: function (res) {
+		      
+		      	that.categoryName = res.data.data.productList[0].categoryName;
+		      	that.productList = res.data.data.productList[0].item;	      
+		      
+		      }
+		    })
+		 }
+
+	}
 	
 </script>
-
-<style lang="css">
-	
-	
-</style>
