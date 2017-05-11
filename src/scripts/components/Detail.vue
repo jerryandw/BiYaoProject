@@ -51,10 +51,23 @@
 				</div>
 				<div class="good-shop">
 				  <p class="shop-name">
-					<span></span>
-					<span>MC婴童服装</span>
+					<span class="shop-pic"><img src="https://img.biyao.com/files/data0/2016/08/30/16/storelogo/cfec9e896e02bbc7.jpeg" alt=""></span>
+					<span class="shop-title">MC婴童服装</span>
 					<span>在售商品14</span>
 				  </p>
+				  <ul>
+				  	<li>
+						<ul>
+							<li>
+								<div><img src="" alt=""></div>
+								<p></p>
+								<p></p>
+							</li>
+							<li></li>
+							<li></li>
+						</ul>
+				  	</li>
+				  </ul>
 				</div>
 			</div>
 		</div>
