@@ -1,5 +1,8 @@
 .m-detail{
-	height:100%;
+	@include flexbox();
+  	@include flex-direction(column);
+  	height:100%;
+	background:#f2f2f2;
 	.detail-head{
 		@include flexbox() ;
 		@include flex-direction() ;
@@ -8,15 +11,22 @@
 		width:100%;
 		line-height: .5rem;
 		background:#fff;
+		
 		.head-middle{
+			@include flexbox() ;
+			@include flex-direction() ;
+			width:1.85rem;
+			justify-content: space-between;
 			span{
 				display: inline-block;
-				margin:0 .2rem;
-				font-size: .18rem;
+				font-size: .16rem;
 			}
 		}
 	}
-	.detail-content{
+	.detail-middle{
+		height:100%;
+		overflow-y: scroll;
+		background:#fff;
 		.detail-banner{
 			height:3.78rem;
 			width:100%;
@@ -30,6 +40,67 @@
 					}
 				}
 			}
+		}
+		.detail-content{
+			background:#f2f2f2;
+			div{
+				padding:0 .1rem;
+			}
+			.good-msg{
+				background:#fff;
+			}
+			.good-bz{
+				height:.4rem;
+				background:#fff;
+				margin:.13rem 0;
+				line-height: .4rem;
+			}
+			.good-choose{
+				height:.4rem;
+				background:#fff;
+				margin-bottom: .13rem;
+				line-height: .4rem;
+			}
+			.good-comment{
+				height:1.2rem;
+				background:#fff;
+			}
+			.good-shop{
+				height:3.22rem;
+				margin-top:.13rem;
+				background: #fff;
+				.shop-name{
+					height:.95rem;
+					border-bottom:1px solid #f2f2f2;
+					line-height: .95rem;
+				}
+			}
+		}
+	}
+	.detail-footer{
+		height:.5rem;
+		line-height: .5rem;
+		width:100%;
+		background:#fff;
+		span{
+			display: inline-block;
+			text-align: center;
+		}
+		.kefu,.shopcar{
+			width:.52rem;
+			font-size: .12rem;
+			border-right:1px solid #dbdbdb;
+		}
+		.plus-car{
+			width:1.29rem;
+			color:#7f4395;
+			font-size: .16rem;
+		}
+		.go-buy{
+			width:1.3rem;
+			background:#7f4395;
+			color:#fff;
+			font-size: .16rem;
 		}
 	}
 }

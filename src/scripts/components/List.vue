@@ -96,6 +96,7 @@
 		      }
 		    })
 
+		 
 		    utilAxios.get({
 		      url: '/api/classify/getCategoryProduct?categoryID=122',
 		      method: 'get',
@@ -103,8 +104,7 @@
 		      
 		      	that.categoryName = res.data.data.productList[0].categoryName;
 		      	that.productList = res.data.data.productList[0].item;	      
-		      	//console.log("productList="+that.productList)
-		      	console.log("categoryName="+that.categoryName)
+		      
 		      }
 		    })
 		 }
