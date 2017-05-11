@@ -1,6 +1,7 @@
 .m-list{
 	@include flexbox();
   	@include flex-direction(column);
+  	height:100%;
 	.list-head{
 		height:.54rem;
 		border-bottom:1px solid #b6b6b6;
@@ -10,7 +11,6 @@
 		ul{
 			width:7.2rem;
 			height:.54rem;
-			
 			@include flexbox();
 			@include flex-direction();
 			
@@ -56,17 +56,20 @@
 				}
 			}
 		}
-		.good-title{
-			height:.44rem;
-			text-align: center;
-			line-height: .44rem;
-			color:#7a7a7a;
-			font-size:.14rem;
-			font-weight: 500;
-		}
+		
 	}
 
 	.good-list{
+
+			.good-title{
+				height:.44rem;
+				text-align: center;
+				line-height: .44rem;
+				color:#7a7a7a;
+				font-size:.14rem;
+				font-weight: 500;
+			}
+			@include flex();
 			width:100%;
 			background:#f2f2f2;
 			overflow-y: scroll;
