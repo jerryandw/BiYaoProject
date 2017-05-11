@@ -135,9 +135,11 @@ export default{
 	mounted: function () {
     var that = this
     utilAxios.get({
+      //url:"/api/getHomeModuleInfo?pageIndex=1&pageSize=10",
       url: '/mock/home',
       method: 'get',
       callback: function (res) {
+      	console.log(res.data)
       	that.bannerimglist=res.data.banners
       	that.saynew=res.data.article.ext.title
         that.newimgs= res.data.modules[0].moduleInfo.moduleItems

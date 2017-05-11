@@ -4,7 +4,7 @@
 		
 		<div class="yo-header yo-header-search">
 			<h2 class="title">搜索</h2>
-			<span class="regret yo-ico"></span>
+			<span class="regret yo-ico" @click="back"></span>
 			<span class="affirm"></span>
 		</div>
 		<div class="yo-search yo-search-search">
@@ -33,9 +33,9 @@
 <script>
 import Vue from "vue"
 import { Search } from 'mint-ui'
-import { Indicator } from 'mint-ui';
+import { Indicator } from 'mint-ui'
 import utilAxios from '../utils/axios'
-
+import router from '../router'
  
 Vue.component(Search.name, Search);
 
@@ -47,17 +47,24 @@ Vue.component(Search.name, Search);
 		},
 		methods:{
 			toList:function(){
-				
+				let that=this
 				Indicator.open({
 				  text: '加载中...',
 				  spinnerType: 'fading-circle'
 				});
-				 //router.push('/list')
-				
-				
-				setTimeout(function(){
-					Indicator.close()
-				},2000)
+				utilAxios.get({
+			        url: '/api//classify/getCategoryProduct?categoryID=' + that.keywords,
+			        method: 'get',
+			        callback: function (res) {
+			          console.log(res);
+			          router.push("list?id="+that.keywords)
+			          Indicator.close()
+			        }
+			      })
+			    
+			},
+			back:function(){
+				router.go(-1)
 			}
 		}
 	}
