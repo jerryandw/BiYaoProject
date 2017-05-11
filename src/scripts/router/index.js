@@ -9,6 +9,8 @@ import My from '@/scripts/components/My'
 import Board from '@/scripts/components/Board'
 import login from '@/scripts/components/login'
 import sign from '@/scripts/components/sign'
+import Search from '@/scripts/components/Search'
+import Detail from '@/scripts/components/Detail'
 
 
 Vue.use(Router)
@@ -44,7 +46,6 @@ export default new Router({
 
         }
       ]
-
     },
     {
       path:'/login',
@@ -54,7 +55,13 @@ export default new Router({
     {
       path:'/sign',
       component:sign
-
+			
+    },{
+    	path: '/search',
+    	component:Search
+    },{
+    	path: '/detail',
+    	component:Detail
     }
       ]
 })

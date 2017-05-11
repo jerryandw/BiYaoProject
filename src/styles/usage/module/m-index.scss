@@ -8,16 +8,15 @@
 
 
   section{
- 
-    @include flex();
+
+    @include flex()
     background: #fff;
     width: 100%;
-    height:100%;    
-    overflow:hidden;
+    height:100%;
+    overflow: hidden;  
 
   }
-
-
+  
   nav{
     height: .44rem;
     background: #f6f3f4;

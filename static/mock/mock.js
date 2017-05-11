@@ -1,4 +1,5 @@
 let home = require('./home.json')
+let homemore = require('./home.json')
 
 let classify = require('./classify.json')
 
