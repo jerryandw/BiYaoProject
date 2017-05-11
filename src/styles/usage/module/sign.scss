@@ -57,6 +57,13 @@
         //  @include border-bottom(1px solid red)
         //  text-align: center;
         }
+        span{
+          width: 1rem;
+          height: .3rem;
+          padding:.05rem .07rem;
+          @include border(1px 1px 1px 1px ,#7f4395);
+
+        }
       }
     .passworld{
       width: 100%;
