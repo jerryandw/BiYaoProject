@@ -62,6 +62,7 @@ export default new Router({
     },{
     	path: '/detail',
     	component:Detail
+
     }
       ]
 })
