@@ -43,7 +43,7 @@
 	<mt-loadmore :bottom-method="loadBottom" :bottom-all-loaded="allLoaded" ref="loadmore">
 
 <ul class="main">
-	<li v-for="item in maindata">
+	<li v-for="(item,index) in maindata" @click="tolist(index)">
 		<h2 >{{item.moduleTitle}}<span class="yo-ico">&#xf07f;</span></h2>
 
 		<div class="imgbig">
@@ -84,8 +84,9 @@
 import Vue from "vue"
 import Router from "vue-router"
 import utilAxios from '../utils/axios'
-import { Swipe, SwipeItem ,Lazyload,Loadmore} from 'mint-ui'
+import { Swipe, SwipeItem ,Lazyload,Loadmore, Indicator} from 'mint-ui'
 import 'mint-ui/lib/style.css'
+import router from '../router'
 
 Vue.use(Router)
 Vue.use(Lazyload);
@@ -95,6 +96,7 @@ Vue.component(Loadmore.name, Loadmore);
 Vue.component(SwipeItem.name, SwipeItem); 
  
 export default{
+	
 	data(){
 	    return {
 	      bannerimglist:[],
@@ -103,10 +105,15 @@ export default{
 	      maindata:[],
 	      allLoaded:false
 	    }
-  },
+ },
   methods:{
 	toseach:function(){
 		this.$router.go('/seach')
+	},
+	tolist:function(listid){
+		listid=listid+122
+		router.push("list?id="+listid)
+		
 	},
 	loadBottom: function(){
 		let that=this
@@ -131,23 +138,30 @@ export default{
 	}
 	
   },
-  
 	mounted: function () {
     var that = this
+    Indicator.open({
+		  text: 'Loading...',
+		  spinnerType: 'fading-circle'
+		});
     utilAxios.get({
-      url: '/mock/home',
+      url:"/api/getHomeModuleInfo?pageIndex=1&pageSize=10",
       method: 'get',
       callback: function (res) {
-      	that.bannerimglist=res.data.banners
-      	that.saynew=res.data.article.ext.title
-        that.newimgs= res.data.modules[0].moduleInfo.moduleItems
+       that.bannerimglist=res.data.data.banners
+       that.saynew=res.data.data.article.ext.title
+       that.newimgs= res.data.data.modules[0].moduleInfo.moduleItems
        
-        for(let i=0; i<res.data.modules.length; i++){
-        	if(res.data.modules[i].moduleType==3){
-        		that.maindata.push(res.data.modules[i].moduleInfo)
-        	let ullength=res.data.modules[i].moduleInfo.moduleItems.length
+        for(let i=0; i<res.data.data.modules.length; i++){
+        	if(res.data.data.modules[i].moduleType==3){
+        		that.maindata.push(res.data.data.modules[i].moduleInfo)
+        	let ullength=res.data.data.modules[i].moduleInfo.moduleItems.length
         	let	n=that.maindata.length-1
         	that.maindata[n].moduleItemsU=ullength
+        	//setTimeout(function(){
+        		Indicator.close()
+        	//},2000)
+        	
         	
         	}
         }

@@ -27,7 +27,6 @@ import salereturn from '@/scripts/components/my-order/salereturn'
 Vue.use(Router)
 
 
-
 export default new Router({
   routes: [
     {
