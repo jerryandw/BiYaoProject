@@ -36,7 +36,7 @@ module.exports = {
         }
       },
       '/mock': {
-          target: 'http://localhost:3000/',
+          target: 'http://sendtion.cn/',
 
           changeOrigin: true,
           pathRewrite: {
