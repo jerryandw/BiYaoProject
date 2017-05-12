@@ -11,8 +11,7 @@ import login from '@/scripts/components/login'
 import sign from '@/scripts/components/sign'
 import Search from '@/scripts/components/Search'
 import Detail from '@/scripts/components/Detail'
-<<<<<<< HEAD
-=======
+
 
 import order from '@/scripts/components/order'
 
@@ -21,7 +20,7 @@ import goods from '@/scripts/components/my-order/goods'
 import pay from '@/scripts/components/my-order/pay'
 import speak from '@/scripts/components/my-order/speak'
 import salereturn from '@/scripts/components/my-order/salereturn'
->>>>>>> ahui
+
 
 
 Vue.use(Router)
@@ -65,7 +64,7 @@ export default new Router({
     {
       path:'/sign',
       component:sign
-			
+
     },{
     	path: '/search',
     	component:Search
