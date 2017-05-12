@@ -2,10 +2,12 @@
 	<div class="bigbox">
 		<header class="yo-header yo-header-a">
 	      <h2 class="title">购物车</h2>
-	      <span class="affirm">编辑</span>
+
+				<span v-if="show"></span>
+				<span class="affirm" v-else="">编辑</span>
 		</header>
 		<div class="main">
-				<div v-if="false" class="shop1">
+				<div v-if="show" class="shop1">
 					<div class="logo">
 								<img src="/static/shopimage/shop.png" />
 					</div>
@@ -13,7 +15,6 @@
 					<input type="button" value="去逛逛" />
 
 				</div>
-
 				<div v-else="" class="shop2">
 					<div class="store">
 						<div class="title">
@@ -51,18 +52,7 @@
 							</dl>
 						</div>
 					</div>
-
-
-
-
 					<div class="store">
-						<!-- <div class="title">
-								<em></em>
-								<i><img src="/static/shopimage/icon_assess_store.png" /></i>
-								<span>HITESINBEL儿童书包</span>
-								<b><img src="/static/shopimage/icon_more.png" /></b>
-								<strong>编辑</strong>
-						</div> -->
 						<div class="title-main">
 							<em></em>
 							<dl>
@@ -91,22 +81,30 @@
 							</dl>
 						</div>
 					</div>
-				</div>
 
-			</div>
-			<div class="footer">
-				<em><img src="/static/shopimage/icon_banner_dot_defult.png" /></em>
-				<i>全选</i>
-				<div class="f-r">
-					<b>合计：</b><b>¥678</b>
-					<span>结算</span>
 				</div>
+				<div v-if="show"></div>
+				<div class="footer" v-else="">
+					<em><img src="/static/shopimage/icon_banner_dot_defult.png" /></em>
+					<i>全选</i>
+					<div class="f-r">
+						<b>合计：</b><b>¥678</b>
+						<span>结算</span>
+					</div>
 
+				</div>
 			</div>
+
 	</div>
 </template>
 
 <script>
-	export default {}
+	export default {
+		data(){
+			return({
+				show:false
+			})
+		}
+	}
 
 </script>

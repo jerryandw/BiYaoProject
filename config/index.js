@@ -36,11 +36,25 @@ module.exports = {
         }
       },
       '/mock': {
-        target: 'http://localhost:3000/',
-        
+          target: 'http://localhost:3000/',
+
+          changeOrigin: true,
+          pathRewrite: {
+            '^/mock': ''
+          }
+        },
+        '/node': {
+          target: 'http://localhost:3001/',
+          changeOrigin: true,
+          pathRewrite: {
+            '^/node': ''
+          }
+      },
+      '/log': {
+        target: 'http://lagoua.applinzi.com',
         changeOrigin: true,
         pathRewrite: {
-          '^/mock': ''
+          '^/log': ''
         }
       }
     },

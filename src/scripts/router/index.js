@@ -16,7 +16,6 @@ import Detail from '@/scripts/components/Detail'
 Vue.use(Router)
 
 
-
 export default new Router({
   routes: [
     {

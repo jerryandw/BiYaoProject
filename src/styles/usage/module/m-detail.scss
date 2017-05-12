@@ -3,6 +3,7 @@
   	@include flex-direction(column);
   	height:100%;
 	background:#f2f2f2;
+	color:#a2a2a2;
 	.detail-head{
 		@include flexbox() ;
 		@include flex-direction() ;
@@ -48,46 +49,127 @@
 			}
 			.good-msg{
 				background:#fff;
+				height:1.26rem;
+				.good-title{
+					@include flexbox() ;
+					justify-content: space-between;
+					line-height: .5rem;
+					.g-name{
+						font-size: .18rem;
+						color:#000;
+					}
+				}
+				.good-ps{
+					@include flexbox() ;
+					justify-content: space-between;
+					line-height: .55rem;
+					.g-price{
+						font-size: .24rem;
+						color:#ff1f2c;
+					}
+					.g-date{
+						color:#000;
+					}
+				}
+				
 			}
 			.good-bz{
+				@include flexbox() ;
+				justify-content: space-between;
 				height:.4rem;
 				background:#fff;
 				margin:.13rem 0;
 				line-height: .4rem;
+				
 			}
 			.good-choose{
+				@include flexbox() ;
+				justify-content: space-between;
 				height:.4rem;
 				background:#fff;
 				margin-bottom: .13rem;
 				line-height: .4rem;
+				font-size: .16rem;
+				color:#000;
 			}
 			.good-comment{
 				height:1.2rem;
 				background:#fff;
+				.g-ping{
+					@include flexbox() ;
+					justify-content: space-between;
+					height:.44rem;
+					font-size: .16rem;
+					line-height: .44rem;
+					border-bottom: 1px solid #ddd;
+				}
+				.g-ping-every{
+					.ping-name{
+						@include flexbox() ;
+						justify-content: space-between;
+						height:.35rem;
+						margin-top:.1rem;
+						line-height: .35rem;
+					}
+				}
 			}
 			.good-shop{
-				height:3.22rem;
 				margin-top:.13rem;
 				background: #fff;
 				.shop-name{
+					@include flexbox() ;
+					justify-content: space-between;
 					height:.95rem;
 					border-bottom:1px solid #f2f2f2;
 					line-height: .95rem;
 					span{
 						display: inline-block;
 					}
-					.shop-pic{
-						height:.62rem;
-						width:.62rem;
-						img{
-							width:100%;
-							height:100%;
+					p{
+						.shop-pic{
+							height:.62rem;
+							width:.62rem;
+							img{
+								width:100%;
+								height:100%;
+							}
+						}
+						.shop-title{
+							margin-left: .14rem;
+							height:.6rem;
+							font-size: .18rem;
+							color:#7f4395;
 						}
 					}
-					.shop-title{
-						margin-left: .14rem;
-						width:1rem;
-						height:.6rem;
+					
+					.shop-sell{
+						em{
+							font-size: .18rem;
+							color:#7f4395;
+						}
+					}
+				}
+				.good-detail{
+					ul{
+						li{
+							text-align: center;
+							width:100%;
+							h3{
+								height:.5rem;
+								line-height: .5rem;
+								font-size: .16rem;
+								color:#000;
+							}
+							div{
+								height:4.7rem;
+								width:100%;
+								img{
+									height:100%;
+									width:100%;
+								}
+							}
+							
+						}
 					}
 				}
 			}
