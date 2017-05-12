@@ -33,8 +33,9 @@
 </template>
 <script>
     import Vue from 'vue';
-    //import axios from 'axios'
-    //import Axios from '../../utils/axios.js'
+    import axios from 'axios';
+    import Axios from '../utils/axios.js';
+    import Qs from 'qs';
 export default {
   data(){
     return({
@@ -49,11 +50,28 @@ export default {
   methods: {
       back:function(){
         this.$router.go(-1);
-      // },
-      // login:function(){
-      //   let that = this;
-      // }
+      },
+      login:function(){
+        let that = this;
+        axios.post(
+          '/node/users/login',
+          Qs.stringify({username:this.username,password:this.password}),
+          {headers:{'Content-Type':'application/x-www-form-urlencoded'}}
+        ).then((res)=>{
+          if(res.data=='1'){
+            // Indicator.close();
+            // that.status="登录成功";
+            that.$router.push('/Board')
+          }
+          else{
+            console.log("失败");
+            // Indicator.close();
+            //that.state="登录失败"
+            //that.$router.push('/My')
+          }
+        })
+      }
   }
-}
+
 }
 </script>

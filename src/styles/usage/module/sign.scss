@@ -28,7 +28,7 @@
     width: 100%;
     height: .45rem;
     margin-top: .1rem;
-    //text-align: center;
+    text-align: center;
       padding: 0 .2rem;
       line-height: .45rem;
       input{
@@ -37,25 +37,32 @@
         line-height: .45rem;
 
       //  @include border-bottom(1px solid red)
-      //  text-align: center;
+      // text-align: center;
       }
     }
     .yz{
       width: 100%;
       height: .45rem;
-      //text-align: center;
+      text-align: center;
         padding: 0 .2rem;
         line-height: .45rem;
         margin-top: .1rem;
 
 
         input{
-          width: 2rem;
+          width: 1.2rem;
           height: .45rem;
           line-height: .45rem;
 
         //  @include border-bottom(1px solid red)
         //  text-align: center;
+        }
+        span{
+          width: 1rem;
+          height: .3rem;
+          padding:.05rem .07rem;
+          @include border(1px 1px 1px 1px ,#7f4395);
+
         }
       }
     .passworld{
@@ -64,6 +71,7 @@
       line-height: .45rem;
       padding: 0 .2rem;
       margin-top: .1rem;
+      text-align: center;
       input{
         width: 2rem;
         height: .45rem;
