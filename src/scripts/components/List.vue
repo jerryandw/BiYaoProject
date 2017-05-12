@@ -57,6 +57,7 @@
 				categoryId:122,
 				productList:[],
 				categoryName:null,
+				products:[],
 				num:0,
 				index2:0,
 				index3:0
@@ -66,17 +67,74 @@
 
 		methods:{
 
+		    //点击分类
 			getSub(index){
 
 				this.index2 = index;
 				this.index3 = 0;
 				this.subCategoryList = this.categoryList[index].subCategoryList;
 				this.categoryId = this.categoryList[index].categoryId;
+				
+				this.categoryId = this.subCategoryList[0].categoryId;
+				
+				var that = this;
+				utilAxios.get({
+			      url: '/api/classify/getCategoryProduct?categoryID='+this.categoryId,
+			      method: 'get',
+			      callback: function (res) {
+			      
+			      	this.categoryName = res.data.data.productList[0].categoryName;
+			      	this.products = res.data.data.productList[0].item;
+			      	
+			     
+			      	
+			      	//清除数组原来的数据
+			      	for (var i = 0; i < this.products.length; i++) {
+			      		that.productList.splice(i, 1);//可行
+			      	}
+
+			      	for (var i = 0; i < this.products.length; i++) {
+			      		//Vue.set(that.productList, i, this.productList[i]);//可行
+			      		that.productList.splice(i, 1, this.products[i]);//可行
+			      		//that.productList.push(this.products[i]);//没有刷新
+			      	}
+
+			      	
+			      }
+			    })
 			},
 
+			//点击子分类
 			setIndex(item,index) {
 		        this.index3 = index;
 		        //console.log(this.index2)
+		        this.categoryId = this.subCategoryList[index].categoryId;
+		        console.log("categoryId2="+this.categoryId)
+
+		        var that = this;
+		        utilAxios.get({
+			      url: '/api/classify/getCategoryProduct?categoryID='+this.categoryId,
+			      method: 'get',
+			      callback: function (res) {
+			      
+			      	this.categoryName = res.data.data.productList[0].categoryName;
+			      	this.products = res.data.data.productList[0].item;	
+			      	//this.productList.push(this.productList); 
+			      	
+			      	//清除数组原来的数据
+			      	for (var i = 0; i < this.products.length; i++) {
+			      		that.productList.splice(i, 1);//可行
+			      	}
+
+			      	for (var i = 0; i < this.products.length; i++) {
+			      		
+			      		that.productList.splice(i, 1, this.products[i]);//可行
+			      		
+			      	}
+
+			      	
+			      }
+			    })
 		    },
 
 		},
@@ -84,27 +142,25 @@
 		mounted: function () {
 		    var that = this
 		    utilAxios.get({
-		      url: '/mock/classify',
+		      url: '/mock/html5/json/categoryList.json',
 		      method: 'get',
 		      callback: function (res) {
 		      
 		      	that.categoryList = res.data.categoryList;	
 		      	that.subCategoryList = res.data.categoryList[that.num].subCategoryList;
 		      	that.categoryId = res.data.categoryList[that.num].categoryId;
-		      	//console.log("categoryList="+that.categoryList)
-     			//console.log("subCategoryList="+that.subCategoryList)
+		      
 		      }
 		    })
 
-		 
 		    utilAxios.get({
-		      url: '/api/classify/getCategoryProduct?categoryID=122',
+		      url: '/api/classify/getCategoryProduct?categoryID='+that.categoryId,
 		      method: 'get',
 		      callback: function (res) {
 		      
 		      	that.categoryName = res.data.data.productList[0].categoryName;
 		      	that.productList = res.data.data.productList[0].item;	      
-		      
+		      	
 		      }
 		    })
 		 }
