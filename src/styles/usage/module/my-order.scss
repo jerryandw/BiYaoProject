@@ -1,0 +1,51 @@
+.my-order{
+  width: 100%;
+  height: 100%;
+  p{
+    height: .44rem;
+    line-height: .44rem;
+    background: #fff;
+    position: relative;
+    text-align: center;
+    font-size: .18rem;
+    @include border(0 0 1px 0,#ddd);
+    img{
+      position: absolute;
+      left:.1rem;
+      width: .15rem;
+      height: .2rem;
+      margin-top: .1rem;
+      transform: rotate(180deg);
+    }
+  }
+  .title{
+    width: 100%;
+    height: .4rem;
+    line-height: .4rem;
+    background: #fff;
+    @include border(0 0 1px 0,#ddd);
+    ul{
+      @include flexbox();
+      @include flex-direction();
+      padding: 0 .1rem;
+      li{
+        @include flex();
+        //margin-left: .1rem;
+        text-align: center;
+        i{
+          height: .4rem;
+          line-height: .4rem;
+          display: inline-block;
+          font-size: .14rem;
+          &.active{
+            color: #7f4395;
+            font-weight: bold;
+            @include border(0 0 5px 0,#7f4395);
+          }
+        }
+
+      }
+
+    }
+  }
+}

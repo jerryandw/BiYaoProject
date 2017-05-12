@@ -12,6 +12,14 @@ import sign from '@/scripts/components/sign'
 import Search from '@/scripts/components/Search'
 import Detail from '@/scripts/components/Detail'
 
+import order from '@/scripts/components/order'
+
+import all from '@/scripts/components/my-order/all'
+import goods from '@/scripts/components/my-order/goods'
+import pay from '@/scripts/components/my-order/pay'
+import speak from '@/scripts/components/my-order/speak'
+import salereturn from '@/scripts/components/my-order/salereturn'
+
 
 Vue.use(Router)
 
@@ -55,7 +63,7 @@ export default new Router({
     {
       path:'/sign',
       component:sign
-			
+
     },{
     	path: '/search',
     	component:Search
@@ -63,6 +71,30 @@ export default new Router({
     	path: '/detail',
     	component:Detail
 
+    },
+    {
+      path:'/order',
+      component:order,
+      redirect:'/all',
+      children:[
+       {
+         path:'/all',
+         component:all
+       },
+       {
+         path:'/pay',
+         component:pay
+       },{
+         path:'/goods',
+         component:goods
+       },{
+         path:'/speak',
+         component:speak
+       },{
+         path:'/salereturn',
+         component:salereturn
+       }
+      ]
     }
       ]
 })
