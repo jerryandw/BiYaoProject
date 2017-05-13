@@ -23,7 +23,7 @@ import Vue from "vue"
 import Router from "vue-router"
 export default {
   data:function(){
-    return({})
+    return {}
   },
   methods: {
     back:function(){

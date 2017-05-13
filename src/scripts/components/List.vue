@@ -22,15 +22,17 @@
 				<span>{{categoryName}}</span>
 			</div>
 			<ul>
-				<li v-for="(product,index) in productList" >
-					<div class="good-pic">
-						<!-- <img src="https://img.biyao.com/files/temp/79/79caf615d25e9e99.jpg" alt=""> -->
-						<img :src=product.imageUrl >
+				
+				<router-link :to="`/detail`" tag="li" v-for="(product,index) in products">
+					
+						<div class="good-pic">
+							<img :src=product.imageUrl >
+						</div>
+						<span class="good-name">{{product.title}}</span>
+						<span class="good-pri"><em>￥</em>{{product.price}}</span>
+					
+				</router-link>
 
-					</div>
-					<span class="good-name">{{product.title}}</span>
-					<span class="good-pri"><em>￥</em>{{product.price}}</span>
-				</li>
 			</ul>
 		</div>
 	</div>
@@ -58,10 +60,9 @@
 				productList:[],
 				categoryName:null,
 				products:[],
-				num:0,
+				count:0,
 				index2:0,
-				index3:0
-				
+				index3:0,		
 			}
 		},
 
@@ -75,30 +76,20 @@
 				this.subCategoryList = this.categoryList[index].subCategoryList;
 				this.categoryId = this.categoryList[index].categoryId;
 				
-				this.categoryId = this.subCategoryList[0].categoryId;
 				
+				if (this.subCategoryList.length > 0) {
+					this.categoryId = this.subCategoryList[0].categoryId;
+					
+				}
+
 				var that = this;
 				utilAxios.get({
-			      url: '/api/classify/getCategoryProduct?categoryID='+this.categoryId,
+			      url: '/api/classify/getCategoryProduct?categoryID='+that.categoryId,
 			      method: 'get',
 			      callback: function (res) {
 			      
-			      	this.categoryName = res.data.data.productList[0].categoryName;
-			      	this.products = res.data.data.productList[0].item;
-			      	
-			     
-			      	
-			      	//清除数组原来的数据
-			      	for (var i = 0; i < this.products.length; i++) {
-			      		that.productList.splice(i, 1);//可行
-			      	}
-
-			      	for (var i = 0; i < this.products.length; i++) {
-			      		//Vue.set(that.productList, i, this.productList[i]);//可行
-			      		that.productList.splice(i, 1, this.products[i]);//可行
-			      		//that.productList.push(this.products[i]);//没有刷新
-			      	}
-
+			      	that.categoryName = res.data.data.productList[0].categoryName;
+			      	that.products = res.data.data.productList[0].item;
 			      	
 			      }
 			    })
@@ -109,29 +100,16 @@
 		        this.index3 = index;
 		        //console.log(this.index2)
 		        this.categoryId = this.subCategoryList[index].categoryId;
-		        console.log("categoryId2="+this.categoryId)
+		        
 
 		        var that = this;
 		        utilAxios.get({
-			      url: '/api/classify/getCategoryProduct?categoryID='+this.categoryId,
+			      url: '/api/classify/getCategoryProduct?categoryID='+that.categoryId,
 			      method: 'get',
 			      callback: function (res) {
 			      
-			      	this.categoryName = res.data.data.productList[0].categoryName;
-			      	this.products = res.data.data.productList[0].item;	
-			      	//this.productList.push(this.productList); 
-			      	
-			      	//清除数组原来的数据
-			      	for (var i = 0; i < this.products.length; i++) {
-			      		that.productList.splice(i, 1);//可行
-			      	}
-
-			      	for (var i = 0; i < this.products.length; i++) {
-			      		
-			      		that.productList.splice(i, 1, this.products[i]);//可行
-			      		
-			      	}
-
+			      	that.categoryName = res.data.data.productList[0].categoryName;
+			      	that.products = res.data.data.productList[0].item;	
 			      	
 			      }
 			    })
@@ -147,9 +125,9 @@
 		      callback: function (res) {
 		      
 		      	that.categoryList = res.data.categoryList;	
-		      	that.subCategoryList = res.data.categoryList[that.num].subCategoryList;
-		      	that.categoryId = res.data.categoryList[that.num].categoryId;
-		      
+		      	that.subCategoryList = res.data.categoryList[0].subCategoryList;
+		      	that.categoryId = res.data.categoryList[0].categoryId;
+		      	
 		      }
 		    })
 
@@ -159,8 +137,7 @@
 		      callback: function (res) {
 		      
 		      	that.categoryName = res.data.data.productList[0].categoryName;
-		      	that.productList = res.data.data.productList[0].item;	      
-		      	
+		      	that.productList = res.data.data.productList[0].item;	 
 		      }
 		    })
 		 }

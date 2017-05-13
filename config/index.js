@@ -44,7 +44,7 @@ module.exports = {
           }
         },
         '/node': {
-          target: 'http://localhost:3001/',
+          target: 'http://192.168.253.8:3001/',
           changeOrigin: true,
           pathRewrite: {
             '^/node': ''

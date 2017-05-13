@@ -1,15 +1,15 @@
-<template lang="html">
+ <template lang="html">
 	
 
 	<div class="m-detail">
 		<div class="detail-head">
-			<i></i>
+			<i class="yo-ico">&#xf07d;</i>
 			<div class="head-middle">
 				<span>商品</span>
 				<span>详情</span>
 				<span>评价</span>
 			</div>
-			<i></i>
+			<i class="yo-ico">&#xf07e;</i>
 		</div>
 		<div class="detail-middle">
 		
@@ -34,12 +34,17 @@
 				</div>
 				<div class="good-bz">
 					<P>
-						<span>7天无忧退换&nbsp;</span>
-						<span>先行赔付&nbsp;</span>
-						<span>超时赔偿&nbsp;</span>
-						<span>顺丰包邮&nbsp;</span>
+						<i class="yo-ico">&#xf2f7;</i>
+						<span>7天无忧退换</span>
+						<i class="yo-ico">&#xf2f7;</i>
+						<span>先行赔付</span>
+						<i class="yo-ico">&#xf2f7;</i>
+						<span>超时赔偿</span>
+						<i class="yo-ico">&#xf2f7;</i>
+						<span>顺丰包邮</span>
+
 					</P>
-					<i>1</i>
+					<i class="yo-ico">&#xf07f;</i>
 				</div>
 				<div class="good-choose">
 					<P>
@@ -47,7 +52,7 @@
 						<span>蓝兔，</span>
 						<span>1件</span>
 					</P>
-					<i>1</i>
+					<i class="yo-ico">&#xf07f;</i>
 				</div>
 				<div class="good-comment">
 					<p class="g-ping">
@@ -62,32 +67,9 @@
 						<p>质量很好</p>
 					</div>
 				</div>
-				<div class="good-shop">
-				  <div class="shop-name">
-				  	<p>
-						<span class="shop-pic"><img src="https://img.biyao.com/files/data0/2016/08/30/16/storelogo/cfec9e896e02bbc7.jpeg" alt=""></span>
-						<span class="shop-title">MC婴童服装</span>
-					</p>
-					<span class="shop-sell">在售商品<em>14</em></span>
-				  </div>
-				  <div class="good-detail">
-					  <ul>
-							<li>
-								<h3>纯棉品质，环保舒适</h3>
-								<div>
-									<img src="https://img.biyao.com/files/temp/41/4112658d1899f9af.jpg" alt="">
-								</div>
-							</li>
-							<li>
-								<h3>纯棉品质，环保舒适</h3>
-								<div>
-									<img src="https://img.biyao.com/files/temp/41/4112658d1899f9af.jpg" alt="">
-								</div>
-							</li>
-					  </ul>
-				  </div>
-				</div>
+
 			</div>
+
 		</div>
 		<div class="detail-footer">
 			<span class="kefu">客服</span>
@@ -98,4 +80,9 @@
 	</div>
 	
 </template>
+
+<script>
+
+
+</script>
 
